@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Gilroy";
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top,#ecf0f1, #2c3e50 );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bord {
+    height: 80%;
+    width: 80%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.upper-border {
+    padding: 0px 30%;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    color: rgb(255, 255, 255);
+    justify-content: space-between;
+    background-color: rgb(102, 29, 29);
+}
+
+.elem {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 10%;
+    color: rgb(255, 255, 255);
+}
+
+.box {
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: linear-gradient(to right,#2c3e50 , #ecf0f1 );
+}
+
+.bottom-box {
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    height: calc(100% - 100px);
+    background: linear-gradient(to right,#2c3e50 , #ecf0f1 );
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.bubble {
+    color: black; 
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 800;
+   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.2s; 
+}
+
+.bubble:hover {
+    background: linear-gradient(to bottom, #81D4FA, #B3E5FC); 
+    cursor: pointer;
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
